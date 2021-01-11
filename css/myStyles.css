@@ -1,0 +1,58 @@
+.layoutBackground{
+    background-image: url("../images/background-black.jpg");
+    background-size: auto;
+}
+.text-justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.div-text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.text-gray{
+
+}
+.bg-ice-white{
+    background-color: #DCDCDC;
+}
+.bg-dark-gray{
+    background-color: #4E4C4E;
+}
+
+
+.hoverable{
+    display:inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position:relative;
+    box-shadow:  10px 10px 25px rgba(255,255,255,0);
+    tranform: translateZ(0);
+    transition-duration: .3s;
+    transition-property:transform;
+}
+
+.hoverable:before{
+    position:absolute;
+    pointer-events: none;
+    z-index:-1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height:5px;
+    width:90%;
+    opacity:1;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    transition-duration: 0.1s;
+    transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+    transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+    opacity: 1;
+    transform: translateY(-5px);
+}

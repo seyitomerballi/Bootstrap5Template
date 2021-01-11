@@ -1,0 +1,97 @@
+<?php
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kişisel Web Sitesi Seyit Ömer Balli">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, PHP, Vue.js, Full Stack Developer">
+    <meta name="author" content="Seyit Ömer Balli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/myStyles.css" rel="stylesheet">
+    <title>Hoşgeldiniz - Seyit Ömer Balli</title>
+
+</head>
+<body class="layoutBackground">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-dark">
+                <img src="images/6sg.svg" alt="" width="30" height="24" class="d-inline-block align-top">
+                Seyit Ömer Balli
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Menu Toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-dark" id="menu">
+                <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" id="len1" class="nav-link hoverable">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="len2" class="nav-link hoverable">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="len3" class="nav-link hoverable">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="len4" class="nav-link hoverable">CV</a>
+                    </li>
+                </ul>
+                <nav class="navbar navbar-light ">
+                    <div class="container-fluid px-0">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Ara">
+                            <button class="btn btn-outline-dark border-1 border-dark" type="submit">Ara</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container border border-0 m-auto mt-3 bg-dark-gray p-3 rounded div-text-justify">
+        <div class="row">
+            <div class="col col-lg-8 pe-auto">
+                <div class="col border p-3 px-3 rounded bg-white">
+                    <!-- post page-->
+
+                    <!-- post page end-->
+                </div>
+            </div>
+            <div class="col col-lg-4 pe-auto">
+                <div class="col border p-3 px-3 rounded bg-white">
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script>
+    $(function(){
+        var str = '#len';
+        $(document).ready(function(){
+            var i, stop;
+            i = 1;
+            stop = 4;
+            setInterval(function(){
+                if (i > stop){
+                    return;
+                }
+                $('#len'+(i++)).toggleClass('bounce');
+            }, 500)
+        });
+    });
+</script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/myScripts.js"></script>
+</body>
+</html>

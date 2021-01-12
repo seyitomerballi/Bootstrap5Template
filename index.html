@@ -14,10 +14,10 @@
 
 </head>
 <body class="layoutBackground">
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark">
+<header class="text-white">
+    <nav class="navbar navbar-expand-lg headerBackground text-white">
         <div class="container">
-            <a href="index.html" class="navbar-brand text-dark">
+            <a href="index.html" id="personalName" class="navbar-brand etiket">
                 <img src="images/6sg.svg" alt="" width="30" height="24" class="d-inline-block align-top">
                 Seyit Ömer Balli
             </a>
@@ -26,70 +26,282 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse text-dark" id="menu">
-                <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" id="len1" class="nav-link hoverable">Anasayfa</a>
+            <div class="collapse navbar-collapse text-white" id="menu">
+                <ul class="nav navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item px-3">
+                        <a href="#" class="etiket hoverable nav-link">Anasayfa</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" id="len2" class="nav-link hoverable">Hakkımda</a>
+                    <li class="nav-item px-3">
+                        <a href="#" class="etiket hoverable nav-link">Hakkımda</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" id="len3" class="nav-link hoverable">İletişim</a>
+                    <li class="nav-item px-3">
+                        <a href="#" class="etiket hoverable nav-link">İletişim</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" id="len4" class="nav-link hoverable">CV</a>
+                    <li class="nav-item px-3">
+                        <a href="#" class="etiket hoverable nav-link">CV</a>
                     </li>
                 </ul>
-                <nav class="navbar navbar-light ">
-                    <div class="container-fluid px-0">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Ara">
-                            <button class="btn btn-outline-dark border-1 border-dark" type="submit">Ara</button>
-                        </form>
-                    </div>
-                </nav>
             </div>
         </div>
     </nav>
 </header>
 <main>
-    <div class="container border border-0 m-auto mt-3 bg-dark-gray p-3 rounded div-text-justify">
-        <div class="row">
-            <div class="col col-lg-8 pe-auto">
-                <div class="col border p-3 px-3 rounded bg-white">
+    <div class="container border border-2 border-secondary m-auto mt-3 p-3 rounded div-text-justify bodyBackground">
+        <div class="row me-0">
+            <div class="col col-lg-9 pe-auto py-md-0 py-3 ">
+                <div class="col border p-3 px-3 rounded bg-light-gray">
                     <!-- post page-->
+                    <div class="card mb-3 position-relative border-0 bg-light-gray">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="https://via.placeholder.com/150x150" style="max-width: 100%;max-height: 250px"
+                                     width="500px"
+                                     class="flex-shrink-0 rounded" alt="...">
+                            </div>
+                            <div class="col-sm-8 col-md-8 ">
+                                <div class="card-body p-0">
+                                    <h1 class="h1 text-capitalize">Makale Başlık</h1>
+                                    <p class="card-text col-12 truncate-overflow makaleSize">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur
+                                        adipisicing elit.
+                                        At cupiditate debitis doloremque, ea est fuga laborum, laudantium modi
+                                        omnis,
+                                        optio
+                                        quaerat voluptatem. A blanditiis distinctio, esse harum laudantium odio odit
+                                        provident
+                                        quaerat, quisquam ratione repudiandae totam, unde ut? A, accusantium aperiam
+                                        autem
+                                        consequatur delectus deserunt, dolorem eius est, eum fugit incidunt numquam
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="https://via.placeholder.com/150x150" style="max-width: 100%;max-height: 250px"
+                                     width="500px"
+                                     class="flex-shrink-0 rounded" alt="...">
+                            </div>
+                            <div class="col-sm-8 col-md-8 ">
+                                <div class="card-body p-0">
+                                    <h1 class="h1 text-capitalize">Makale Başlık</h1>
+                                    <p class="card-text col-12 truncate-overflow makaleSize">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur
+                                        adipisicing elit.
+                                        At cupiditate debitis doloremque, ea est fuga laborum, laudantium modi
+                                        omnis,
+                                        optio
+                                        quaerat voluptatem. A blanditiis distinctio, esse harum laudantium odio odit
+                                        provident
+                                        quaerat, quisquam ratione repudiandae totam, unde ut? A, accusantium aperiam
+                                        autem
+                                        consequatur delectus deserunt, dolorem eius est, eum fugit incidunt numquam
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="https://via.placeholder.com/150x150" style="max-width: 100%;max-height: 250px"
+                                     width="500px"
+                                     class="flex-shrink-0 rounded" alt="...">
+                            </div>
+                            <div class="col-sm-8 col-md-8 ">
+                                <div class="card-body p-0">
+                                    <h1 class="h1 text-capitalize">Makale Başlık</h1>
+                                    <p class="card-text col-12 truncate-overflow makaleSize">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur
+                                        adipisicing elit.
+                                        At cupiditate debitis doloremque, ea est fuga laborum, laudantium modi
+                                        omnis,
+                                        optio
+                                        quaerat voluptatem. A blanditiis distinctio, esse harum laudantium odio odit
+                                        provident
+                                        quaerat, quisquam ratione repudiandae totam, unde ut? A, accusantium aperiam
+                                        autem
+                                        consequatur delectus deserunt, dolorem eius est, eum fugit incidunt numquam
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="https://via.placeholder.com/150x150" style="max-width: 100%;max-height: 250px"
+                                     width="500px"
+                                     class="flex-shrink-0 rounded" alt="...">
+                            </div>
+                            <div class="col-sm-8 col-md-8 ">
+                                <div class="card-body p-0">
+                                    <h1 class="h1 text-capitalize">Makale Başlık</h1>
+                                    <p class="card-text col-12 truncate-overflow makaleSize">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur
+                                        adipisicing elit.
+                                        At cupiditate debitis doloremque, ea est fuga laborum, laudantium modi
+                                        omnis,
+                                        optio
+                                        quaerat voluptatem. A blanditiis distinctio, esse harum laudantium odio odit
+                                        provident
+                                        quaerat, quisquam ratione repudiandae totam, unde ut? A, accusantium aperiam
+                                        autem
+                                        consequatur delectus deserunt, dolorem eius est, eum fugit incidunt numquam
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4">
+                                <img src="https://via.placeholder.com/150x150" style="max-width: 100%;max-height: 250px"
+                                     width="500px"
+                                     class="flex-shrink-0 rounded" alt="...">
+                            </div>
+                            <div class="col-sm-8 col-md-8 ">
+                                <div class="card-body p-0">
+                                    <h1 class="h1 text-capitalize">Makale Başlık</h1>
+                                    <p class="card-text col-12 truncate-overflow makaleSize">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur
+                                        adipisicing elit.
+                                        At cupiditate debitis doloremque, ea est fuga laborum, laudantium modi
+                                        omnis,
+                                        optio
+                                        quaerat voluptatem. A blanditiis distinctio, esse harum laudantium odio odit
+                                        provident
+                                        quaerat, quisquam ratione repudiandae totam, unde ut? A, accusantium aperiam
+                                        autem
+                                        consequatur delectus deserunt, dolorem eius est, eum fugit incidunt numquam
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="btn btn-outline-dark">Oku</a>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- post page end-->
+
+                        <!-- post page end-->
+                    </div>
                 </div>
             </div>
-            <div class="col col-lg-4 pe-auto">
-                <div class="col border p-3 px-3 rounded bg-white">
+            <div class="col col-lg-3 pe-auto py-md-0 py-3 bg-light-gray rounded mx-0">
+                <div class="col border border-0 p-3 px-3 bg-light-gray">
                     <!--  -->
+                    <div class="card border-0">
+                        <div class="card-body px-0 py-0">
+                            <nav class="navbar navbar-light">
+                                <div class="container-fluid px-0">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="search" placeholder="Ara"
+                                               aria-label="Ara">
+                                        <button class="btn btn-outline-dark border-1 border-dark" type="submit">Ara
+                                        </button>
+                                    </form>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card border-0">
+                        <div class="card-body py-0">
+                            <div class="row">
+                                <div class="col px-0 py-0">
+                                    <ul class="list-unstyled">
+                                        <li class="etiket2">
+                                            <a href="#">Bootstrap 5</a>
+                                        </li>
+                                        <li class="etiket2">
+                                            <a href="#">php</a>
+                                        </li>
+                                        <li class="etiket2">
+                                            <a href="#">ASP.net</a>
+                                        </li>
+                                        <li class="etiket2">
+                                            <a href="#">hggh</a>
+                                        </li>
+                                        <li class="etiket2">
+                                            <a href="#">sddfhnfgh</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
-<footer>
-
+<footer class="footer mt-3 py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+                <div class="row">
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                    <div class="col"><span class="text-muted">Place sticky footer content here.</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
-<script>
-    $(function(){
-        var str = '#len';
-        $(document).ready(function(){
-            var i, stop;
-            i = 1;
-            stop = 4;
-            setInterval(function(){
-                if (i > stop){
-                    return;
-                }
-                $('#len'+(i++)).toggleClass('bounce');
-            }, 500)
-        });
-    });
-</script>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/myScripts.js"></script>

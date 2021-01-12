@@ -1,58 +1,138 @@
-.layoutBackground{
-    background-image: url("../images/background-black.jpg");
+.layoutBackground {
+    background-image: url("../images/background3.svg");
     background-size: auto;
 }
-.text-justify{
+
+.headerBackground {
+    background-color: #2A2A2A;
+}
+
+.bodyBackground {
+    background-image: url("../images/background1.svg");
+}
+
+#headernavlinkcolor {
+    color: white !important;
+}
+
+.text-justify {
     text-align: justify;
     text-justify: inter-word;
 }
+
 .div-text-justify {
     text-align: justify;
     text-justify: inter-word;
 }
-.text-gray{
+
+.text-gray {
 
 }
-.bg-ice-white{
+
+.bg-ice-white {
     background-color: #DCDCDC;
 }
-.bg-dark-gray{
-    background-color: #4E4C4E;
+
+.bg-light-gray {
+    background-color: #E9ECEF;
 }
 
+.card {
+    background-color: #E9ECEF;
+    border: 0;
+}
 
-.hoverable{
-    display:inline-block;
+hr {
+    opacity: inherit;
+}
+
+div > ul > li {
+    font-size: 15px;
+}
+
+#personalName {
+    font-size: 18px;
+    color: white !important;
+}
+
+.etiket {
+    background: linear-gradient(to right, gray, gray 50%, white 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 1000ms ease;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.etiket:hover {
+    background-position: 0 100%;
+    font-weight: bolder;
+}
+.etiket2 {
+    background: linear-gradient(to right, black, grey 25% , grey 25%,grey 25%,grey 25%,grey 25% ,grey 25% , black 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 2000ms ease;
+    text-decoration: none;
+}
+.etiket2:hover {
+    background-position: 0 50%;
+    font-weight: bold;
+}
+
+.hoverable {
+    display: inline-block;
     backface-visibility: hidden;
     vertical-align: middle;
-    position:relative;
-    box-shadow:  10px 10px 25px rgba(255,255,255,0);
-    tranform: translateZ(0);
-    transition-duration: .3s;
-    transition-property:transform;
+    position: relative;
+    transform: translateZ(0);
+    transition-duration: .1s;
+    transition-property: transform;
+    background: linear-gradient(to right, white, grey 50%, white 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 2000ms ease;
+    text-decoration: none;
 }
 
-.hoverable:before{
-    position:absolute;
+.hoverable:before {
+    position: absolute;
     pointer-events: none;
-    z-index:-1;
+    z-index: -1;
     content: '';
     top: 100%;
     left: 5%;
-    height:5px;
-    width:90%;
-    opacity:1;
-    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 80%);
+    height: 5px;
+    width: 90%;
+    opacity: 1;
     /* W3C */
     transition-duration: 0.1s;
     transition-property: transform, opacity;
 }
 
-.hoverable:hover, .hoverable:active, .hoverable:focus{
+.hoverable:hover, .hoverable:active, .hoverable:focus {
     transform: translateY(-5px);
 }
-.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before {
     opacity: 1;
     transform: translateY(-5px);
+}
+
+.truncate-overflow {
+    max-width: 100%;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
+.makaleSize {
+    font-size: 15px;
 }
